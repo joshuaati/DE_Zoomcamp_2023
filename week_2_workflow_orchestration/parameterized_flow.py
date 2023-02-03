@@ -8,7 +8,7 @@ from prefect.tasks import task_input_hash
 
 @task(retries=3, cache_key_fn=task_input_hash, cache_expiration=timedelta(hours=1))
 def fetch(dataset_url: str) -> pd.DataFrame:
-    """Read taxi data from wev into pandas DataFrame"""
+    """Read taxi data from web into pandas DataFrame"""
 
     df= pd.read_csv(dataset_url)
     return df

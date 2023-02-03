@@ -8,6 +8,7 @@
 Where 
 `parameterized_flow.py` is the name of the file
 `etl_parent_flow` is the entry flow point 
+
 It outputs
 `etl_parent_flow-deployment.yaml` that contains the necessary instructions for prefect to execute
 
@@ -15,4 +16,4 @@ It outputs
 `prefect deployment apply etl_parent_flow-deployment.yaml`
 
 - To run the workqueue
-prefect agent start --work-queue "default" 
+`prefect agent start --work-queue "default"` 
