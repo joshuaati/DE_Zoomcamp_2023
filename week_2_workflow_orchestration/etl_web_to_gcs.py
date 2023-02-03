@@ -41,7 +41,7 @@ def write_gcs(path: Path) -> None:
 
 @flow()
 def etl_web_to_gcs() -> None:
-    """The main ETL function"""
+    """The main ETL function to extract from github into Google Cloud Storage"""
     color = "yellow"
     year = 2021
     month = 1
