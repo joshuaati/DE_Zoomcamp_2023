@@ -3,11 +3,11 @@
 ###
 name: Parameterized ETL
 description: null
-version: b8263d505996971984e2a17cd42dc756
+version: a03c17269b04ccbcc3e844f892cbe2fc
 # The work queue that will handle this deployment's runs
 work_queue_name: default
 tags: []
-parameters: {"color": "yellow", "months": [1,2,3], "year": 2021}
+parameters: {"color": "yellow", "months": [1, 2, 3], "year": 2021}
 schedule: null
 infra_overrides: {}
 infrastructure:
@@ -28,7 +28,7 @@ flow_name: etl-parent-flow
 manifest_path: null
 storage: null
 path: C:\Users\x\OneDrive\Documents\Python\Jan_2023\DE_Zoomcamp\week_2_workflow_orchestration
-entrypoint: parameterized_flow.py:etl_parent_flow
+entrypoint: flows\03_deployments\parameterized_flow.py:etl_parent_flow
 parameter_openapi_schema:
   title: Parameters
   type: object

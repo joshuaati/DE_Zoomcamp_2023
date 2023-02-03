@@ -53,6 +53,7 @@ def etl_web_to_gcs(year: int, month: int, color: str) -> None:
     path = write_local(df_clean, color, dataset_file)
     write_gcs(path)
 
+
 @flow()
 def etl_parent_flow(
     months: list[int] = [1, 2], year: int = 2021, color: str = "yellow" 
