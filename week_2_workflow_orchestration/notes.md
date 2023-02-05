@@ -22,8 +22,26 @@ It outputs
 `prefect agent start --work-queue "default"` 
 
 
+
+## To create a deployment from phython file and docker,
 - To build docker image
 first create the Dockerfile then run
 `docker image build -t joshuaati/prefect:zoomcamp .`
 push the image to online repo
 `docker image push joshuaati/prefect:zoomcamp`
+
+create the docker block on prefect orion server using `joshuaati/prefect:zoomcamp` as image url
+
+create the `docker_deploy.py` file with the prefect block code
+
+check the profile available
+`prefect profile ls`
+
+make docker to interface with orion server
+`prefect config set PREFECT_API_URL="http://127.0.0.1:4200/api"`
+
+start docker agent
+`prefect agent start -q default`
+
+run the task. parameters can be changed using -p argument
+`prefect deployment run etl-parent-flow/docker-flow -p "months=[1]"`
