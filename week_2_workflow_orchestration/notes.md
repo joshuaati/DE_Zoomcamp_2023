@@ -45,3 +45,6 @@ start docker agent
 
 run the task. parameters can be changed using -p argument
 `prefect deployment run etl-parent-flow/docker-flow -p "months=[1]"`
+
+Deploy from github
+`prefect deployment build flows/02_gcp/etl_web_to_gcs.py:etl_web_to_gcs --name github_deploy --apply -sb github/github-block`
