@@ -1,0 +1,23 @@
+postgress-dbt:
+  target: dev
+  outputs:
+    dev:
+    type: postgres
+    host: localhost
+    user: root
+    password: root
+    port: 5433
+    dbname:
+    schema:
+    threads:
+    keeplives_idle: 0
+bigquery-dbt:
+  target: dev
+  outputs:
+    dev:
+    type: bigquery
+    method: service-account
+    project: taxi-rides-ny
+    dataset:
+    threads: 
+    keyfile:
