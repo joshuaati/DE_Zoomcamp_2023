@@ -17,7 +17,7 @@ bigquery-dbt:
     dev:
     type: bigquery
     method: service-account
-    project: taxi-rides-ny
-    dataset:
-    threads: 
-    keyfile:
+    project: dtc-de-375918
+    dataset: 
+    threads: 4
+    keyfile: keyfile.json
