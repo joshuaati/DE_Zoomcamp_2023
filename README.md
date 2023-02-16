@@ -1,1 +1,1 @@
-## Data Engineering Zoomcamp bt DataTalksClub
+## Data Engineering Zoomcamp by DataTalksClub
