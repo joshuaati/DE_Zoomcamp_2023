@@ -16,9 +16,9 @@ FROM --platform=$build_for python:3.10.7-slim-bullseye as base
 
 ARG dbt_core_ref=dbt-core@v1.5.0a1
 ARG dbt_postgres_ref=dbt-core@v1.5.0a1
-# ARG dbt_redshift_ref=dbt-redshift@v1.5.0a1
+ARG dbt_redshift_ref=dbt-redshift@v1.5.0a1
 ARG dbt_bigquery_ref=dbt-bigquery@v1.5.0a1
-# ARG dbt_snowflake_ref=dbt-snowflake@v1.5.0a1
+ARG dbt_snowflake_ref=dbt-snowflake@v1.5.0a1
 ARG dbt_spark_ref=dbt-spark@v1.5.0a1
 # special case args
 ARG dbt_spark_version=all
@@ -69,8 +69,8 @@ RUN python -m pip install --no-cache-dir "git+https://github.com/dbt-labs/${dbt_
 ##
 # dbt-redshift
 ##
-# FROM base as dbt-redshift
-# RUN python -m pip install --no-cache-dir "git+https://github.com/dbt-labs/${dbt_redshift_ref}#egg=dbt-redshift"
+FROM base as dbt-redshift
+RUN python -m pip install --no-cache-dir "git+https://github.com/dbt-labs/${dbt_redshift_ref}#egg=dbt-redshift"
 
 
 ##
@@ -83,8 +83,8 @@ RUN python -m pip install --no-cache-dir "git+https://github.com/dbt-labs/${dbt_
 ##
 # dbt-snowflake
 ##
-# FROM base as dbt-snowflake
-# RUN python -m pip install --no-cache-dir "git+https://github.com/dbt-labs/${dbt_snowflake_ref}#egg=dbt-snowflake"
+FROM base as dbt-snowflake
+RUN python -m pip install --no-cache-dir "git+https://github.com/dbt-labs/${dbt_snowflake_ref}#egg=dbt-snowflake"
 
 ##
 # dbt-spark
@@ -127,8 +127,8 @@ RUN apt-get update \
   /var/lib/apt/lists/* \
   /tmp/* \
   /var/tmp/*
-# RUN python -m pip install --no-cache "git+https://github.com/dbt-labs/${dbt_redshift_ref}#egg=dbt-redshift"
+RUN python -m pip install --no-cache "git+https://github.com/dbt-labs/${dbt_redshift_ref}#egg=dbt-redshift"
 RUN python -m pip install --no-cache "git+https://github.com/dbt-labs/${dbt_bigquery_ref}#egg=dbt-bigquery"
-# RUN python -m pip install --no-cache "git+https://github.com/dbt-labs/${dbt_snowflake_ref}#egg=dbt-snowflake"
+RUN python -m pip install --no-cache "git+https://github.com/dbt-labs/${dbt_snowflake_ref}#egg=dbt-snowflake"
 RUN python -m pip install --no-cache "git+https://github.com/dbt-labs/${dbt_spark_ref}#egg=dbt-spark[${dbt_spark_version}]"
 RUN python -m pip install --no-cache "git+https://github.com/dbt-labs/${dbt_postgres_ref}#egg=dbt-postgres&subdirectory=plugins/postgres"

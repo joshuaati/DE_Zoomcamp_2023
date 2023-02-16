@@ -27,24 +27,25 @@ It outputs
 - To build docker image
 first create the Dockerfile then run
 `docker image build -t joshuaati/prefect:zoomcamp .`
-push the image to online repo
+
+- push the image to online repo
 `docker image push joshuaati/prefect:zoomcamp`
 
-create the docker block on prefect orion server using `joshuaati/prefect:zoomcamp` as image url
+- create the docker block on prefect orion server using `joshuaati/prefect:zoomcamp` as image url
 
-create the `docker_deploy.py` file with the prefect block code
+- create the `docker_deploy.py` file with the prefect block code
 
-check the profile available
+- check the profile available
 `prefect profile ls`
 
-make docker to interface with orion server
+- make docker to interface with orion server
 `prefect config set PREFECT_API_URL="http://127.0.0.1:4200/api"`
 
-start docker agent
+- start docker agent
 `prefect agent start -q default`
 
-run the task. parameters can be changed using -p argument
+- run the task. parameters can be changed using -p argument
 `prefect deployment run etl-parent-flow/docker-flow -p "months=[1]"`
 
-Deploy from github
+- Deploy from github
 `prefect deployment build flows/02_gcp/etl_web_to_gcs.py:etl_web_to_gcs --name github_deploy --apply -sb github/github-block`
