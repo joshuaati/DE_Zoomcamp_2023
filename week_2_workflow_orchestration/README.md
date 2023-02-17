@@ -49,3 +49,5 @@ first create the Dockerfile then run
 
 - Deploy from github
 `prefect deployment build flows/02_gcp/etl_web_to_gcs.py:etl_web_to_gcs --name github_deploy --apply -sb github/github-block`
+
+

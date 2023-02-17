@@ -1,0 +1,145 @@
+green = [{
+  "name": "VendorID",
+  "type": "INT64"
+}, {
+  "name": "lpep_pickup_datetime",
+  "type": "TIMESTAMP"
+}, {
+  "name": "lpep_dropoff_datetime",
+  "type": "TIMESTAMP"
+}, {
+  "name": "store_and_fwd_flag",
+  "type": "BOOL"
+}, {
+  "name": "RatecodeID",
+  "type": "INT64"
+}, {
+  "name": "PULocationID",
+  "type": "INT64"
+}, {
+  "name": "DOLocationID",
+  "type": "INT64"
+}, {
+  "name": "passenger_count",
+  "type": "INT64"
+}, {
+  "name": "trip_distance",
+  "type": "FLOAT64"
+}, {
+  "name": "fare_amount",
+  "type": "FLOAT64"
+}, {
+  "name": "extra",
+  "type": "FLOAT64"
+}, {
+  "name": "mta_tax",
+  "type": "FLOAT64"
+}, {
+  "name": "tip_amount",
+  "type": "FLOAT64"
+}, {
+  "name": "tolls_amount",
+  "type": "FLOAT64"
+}, {
+  "name": "ehail_fee",
+  "type": "STRING"
+}, {
+  "name": "improvement_surcharge",
+  "type": "FLOAT64"
+}, {
+  "name": "total_amount",
+  "type": "FLOAT64"
+}, {
+  "name": "payment_type",
+  "type": "INT64"
+}, {
+  "name": "trip_type",
+  "type": "INT64"
+}, {
+  "name": "congestion_surcharge",
+  "type": "FLOAT64"
+}]
+
+
+yellow = [{
+  "name": "VendorID",
+  "type": "FLOAT64"
+}, {
+  "name": "tpep_pickup_datetime",
+  "type": "TIMESTAMP"
+}, {
+  "name": "tpep_dropoff_datetime",
+  "type": "TIMESTAMP"
+}, {
+  "name": "passenger_count",
+  "type": "FLOAT64"
+}, {
+  "name": "trip_distance",
+  "type": "FLOAT64"
+}, {
+  "name": "RatecodeID",
+  "type": "FLOAT64"
+}, {
+  "name": "store_and_fwd_flag",
+  "type": "STRING"
+}, {
+  "name": "PULocationID",
+  "type": "INT64"
+}, {
+  "name": "DOLocationID",
+  "type": "INT64"
+}, {
+  "name": "payment_type",
+  "type": "FLOAT64"
+}, {
+  "name": "fare_amount",
+  "type": "FLOAT64"
+}, {
+  "name": "extra",
+  "type": "FLOAT64"
+}, {
+  "name": "mta_tax",
+  "type": "FLOAT64"
+}, {
+  "name": "tip_amount",
+  "type": "FLOAT64"
+}, {
+  "name": "tolls_amount",
+  "type": "FLOAT64"
+}, {
+  "name": "improvement_surcharge",
+  "type": "FLOAT64"
+}, {
+  "name": "total_amount",
+  "type": "FLOAT64"
+}, {
+  "name": "congestion_surcharge",
+  "type": "FLOAT64"
+}]
+
+
+fhv = [{
+  "name": "int64_field_0",
+  "type": "INT64"
+}, {
+  "name": "dispatching_base_num",
+  "type": "STRING"
+}, {
+  "name": "pickup_datetime",
+  "type": "TIMESTAMP"
+}, {
+  "name": "dropOff_datetime",
+  "type": "TIMESTAMP"
+}, {
+  "name": "PUlocationID",
+  "type": "FLOAT64"
+}, {
+  "name": "DOlocationID",
+  "type": "FLOAT64"
+}, {
+  "name": "SR_Flag",
+  "type": "STRING"
+}, {
+  "name": "Affiliated_base_number",
+  "type": "STRING"
+}]

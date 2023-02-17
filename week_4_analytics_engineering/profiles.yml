@@ -1,4 +1,4 @@
-postgress-dbt:
+dpostgress-dbt:
   target: dev
   outputs:
     dev:
