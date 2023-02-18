@@ -15,13 +15,13 @@ dpostgress-dbt:
 bq-dbt-workshop:
   outputs:
     dev:
-      dataset: <bigquery-dataset>
+      dataset: taxi_rides_ny
       fixed_retries: 1
       keyfile: /.google/credentials/google_credentials.json
       location: EU
       method: service-account
       priority: interactive
-      project: <gcp-project-id>
+      project: dtc-de-375918
       threads: 4
       timeout_seconds: 300
       type: bigquery
