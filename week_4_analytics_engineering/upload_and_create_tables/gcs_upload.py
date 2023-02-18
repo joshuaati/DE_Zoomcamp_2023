@@ -1,7 +1,9 @@
 from google.cloud import storage
 import requests
 import os
+from datetime import timedelta
 from prefect import flow, task
+from prefect.tasks import task_input_hash
 
 os.environ['GOOGLE_APPLICATION_CREDENTIALS']='/Users/x/OneDrive/Documents/Python/Jan_2023/DE_Zoomcamp/week_4_analytics_engineering/.google/credentials/google_credentials.json'
 
@@ -9,7 +11,7 @@ os.environ['GOOGLE_APPLICATION_CREDENTIALS']='/Users/x/OneDrive/Documents/Python
 storage.blob._DEFAULT_CHUNKSIZE = 5 * 1024* 1024  # 5 MB
 storage.blob._MAX_MULTIPART_SIZE = 5 * 1024* 1024  # 5 MB
 
-@task(retries=4)
+@task(retries=4, cache_key_fn=task_input_hash, cache_expiration=timedelta(hours=2))
 def get_response(url_:str) -> bytes:
     '''Download files from a url'''
     response = requests.get(url_) #get response
@@ -39,7 +41,7 @@ def etl_web_to_gcs(color: str, year: int, month: int) -> None:
 
 
 @flow()
-def parent_etl_web_to_gcs(color: str, year: int, months: list[int]):
+def parent_etl(color: str, year: int, months: list[int]):
     for month in months:
         etl_web_to_gcs(color, year, month)
 
@@ -48,4 +50,4 @@ if __name__ == '__main__':
     color = 'green'
     months = [*range(1,13)]
     year = 2019
-    parent_etl_web_to_gcs(months, year)
+    parent_etl(months, year)

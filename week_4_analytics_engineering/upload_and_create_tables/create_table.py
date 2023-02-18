@@ -1,4 +1,4 @@
-from schemas.schema import green, yellow, fhv
+from schema import green, yellow, fhv
 
 from google.cloud import bigquery
 from prefect import flow, task

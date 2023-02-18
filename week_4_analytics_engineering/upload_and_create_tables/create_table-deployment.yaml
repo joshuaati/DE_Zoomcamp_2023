@@ -1,13 +1,13 @@
 ###
-### A complete description of a Prefect Deployment for flow 'parent-etl-web-to-gcs'
+### A complete description of a Prefect Deployment for flow 'create-table'
 ###
-name: NY-Taxi ETL
-description: null
-version: ef8f513d7612833224063a220d9c7dfb
+name: GBQ Create
+description: Create an external table in bigquery from google cloud buckets
+version: 1fb6dba5cf878a30987c9b21e183be17
 # The work queue that will handle this deployment's runs
 work_queue_name: default
 tags: []
-parameters: {"color": "green", "months": [1, 2, 3], "year": 2019}
+parameters: {"color": "green", "year": 2019}
 schedule: null
 infra_overrides: {}
 infrastructure:
@@ -24,11 +24,11 @@ infrastructure:
 ###
 ### DO NOT EDIT BELOW THIS LINE
 ###
-flow_name: parent-etl-web-to-gcs
+flow_name: create-table
 manifest_path: null
 storage: null
-path: C:\Users\x\OneDrive\Documents\Python\Jan_2023\DE_Zoomcamp\week_4_analytics_engineering
-entrypoint: gcs_upload.py:parent_etl_web_to_gcs
+path: C:\Users\x\OneDrive\Documents\Python\Jan_2023\DE_Zoomcamp\week_4_analytics_engineering\upload_and_create_tables
+entrypoint: create_table.py:create_table
 parameter_openapi_schema:
   title: Parameters
   type: object
@@ -41,14 +41,7 @@ parameter_openapi_schema:
       title: year
       position: 1
       type: integer
-    months:
-      title: months
-      position: 2
-      type: array
-      items:
-        type: integer
   required:
   - color
   - year
-  - months
   definitions: null

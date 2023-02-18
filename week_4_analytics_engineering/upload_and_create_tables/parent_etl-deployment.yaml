@@ -1,0 +1,54 @@
+###
+### A complete description of a Prefect Deployment for flow 'parent-etl'
+###
+name: GCS Upload
+description: null
+version: 5cd52374375f8059ef1e16044b77a0d7
+# The work queue that will handle this deployment's runs
+work_queue_name: default
+tags: []
+parameters: {"color": "green", "months": [1, 2, 3], "year": 2019}
+schedule: null
+infra_overrides: {}
+infrastructure:
+  type: process
+  env: {}
+  labels: {}
+  name: null
+  command: null
+  stream_output: true
+  working_dir: null
+  block_type_slug: process
+  _block_type_slug: process
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: parent-etl
+manifest_path: null
+storage: null
+path: C:\Users\x\OneDrive\Documents\Python\Jan_2023\DE_Zoomcamp\week_4_analytics_engineering\upload_and_create_tables
+entrypoint: gcs_upload.py:parent_etl
+parameter_openapi_schema:
+  title: Parameters
+  type: object
+  properties:
+    color:
+      title: color
+      position: 0
+      type: string
+    year:
+      title: year
+      position: 1
+      type: integer
+    months:
+      title: months
+      position: 2
+      type: array
+      items:
+        type: integer
+  required:
+  - color
+  - year
+  - months
+  definitions: null

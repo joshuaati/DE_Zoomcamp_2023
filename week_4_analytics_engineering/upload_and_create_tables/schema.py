@@ -119,9 +119,6 @@ yellow = [{
 
 
 fhv = [{
-  "name": "int64_field_0",
-  "type": "INT64"
-}, {
   "name": "dispatching_base_num",
   "type": "STRING"
 }, {
