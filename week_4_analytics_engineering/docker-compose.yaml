@@ -4,7 +4,7 @@ services:
     build:
       context: .
       target: dbt-bigquery
-    image: dbt/bigquery
+    image: dbt_all/bigquery
     volumes:
       - .:/usr/app
       - ~/.dbt/:/root/.dbt/

@@ -1,16 +1,16 @@
-dpostgress-dbt:
-  target: dev
-  outputs:
-    dev:
-    type: postgres
-    host: localhost
-    user: root
-    password: root
-    port: 5433
-    dbname:
-    schema:
-    threads:
-    keeplives_idle: 0
+# dpostgress-dbt:
+#   target: dev
+#   outputs:
+#     dev:
+#     type: postgres
+#     host: localhost
+#     user: root
+#     password: root
+#     port: 5433
+#     dbname: 
+#     schema: 
+#     threads:
+#     keeplives_idle: 0
 
 bq-dbt-workshop:
   outputs:
@@ -18,11 +18,12 @@ bq-dbt-workshop:
       dataset: taxi_rides_ny
       fixed_retries: 1
       keyfile: /.google/credentials/google_credentials.json
-      location: EU
+      location: europe-west6
       method: service-account
       priority: interactive
       project: dtc-de-375918
       threads: 4
-      timeout_seconds: 300
+      timeout_seconds: 600
       type: bigquery
   target: dev
+  
