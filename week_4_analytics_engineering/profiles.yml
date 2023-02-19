@@ -1,17 +1,3 @@
-# dpostgress-dbt:
-#   target: dev
-#   outputs:
-#     dev:
-#     type: postgres
-#     host: localhost
-#     user: root
-#     password: root
-#     port: 5433
-#     dbname: 
-#     schema: 
-#     threads:
-#     keeplives_idle: 0
-
 bq-dbt-workshop:
   outputs:
     dev:
