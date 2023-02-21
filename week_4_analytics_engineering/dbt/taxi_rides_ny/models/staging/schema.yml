@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: staging
+    database: dtc-de-375918
+    schema: taxi_rides_ny
+
+    tables:
+      - name: green_tripdata
+      - name: yellow_tripdata
+      - name: external_fhv_tripdata_2019

@@ -31,3 +31,14 @@ Happy modeling!
 08:41:46.487342 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/root/.dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, project_name=None, skip_profile_setup=False, defer=None, state=None, cls=<class 'dbt.task.init.InitTask'>, which='init', rpc_method=None)
 08:41:46.489251 [debug] [MainThread]: Tracking: tracking
 08:41:46.496160 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5134124070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5134124ac0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5134124e20>]}
+
+
+============================== 2023-02-21 17:53:13.190769 | 280d857f-079a-4cbd-bf1d-9ae1aa2cbc76 ==============================
+17:53:13.190769 [info ] [MainThread]: Running with dbt=1.0.9
+17:53:13.193101 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/root/.dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, config_dir=True, defer=None, state=None, cls=<class 'dbt.task.debug.DebugTask'>, which='debug', rpc_method=None)
+17:53:13.194779 [debug] [MainThread]: Tracking: tracking
+17:53:13.203230 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8f38930c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8f38930fa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8f38930e80>]}
+17:53:13.205824 [info ] [MainThread]: To view your profiles.yml file, run:
+
+xdg-open /root/.dbt
+17:53:13.208537 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8f38930940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8f38930fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8f38930910>]}
