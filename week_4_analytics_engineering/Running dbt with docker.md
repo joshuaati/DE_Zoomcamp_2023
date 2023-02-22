@@ -80,3 +80,9 @@ where `stg_green_tripdata` is the file in the staging folder under the models
 
 - To change the output dataset of dbt models
   - Change the dataset in the `profiles.yml` file in `~/.dbt/` in your local machine 
+
+- To run dependencies and install utilities
+  -create a `packages.yml` file in the project directory. i.e `taxi-rides-ny` 
+```bash
+docker compose run --workdir="//usr/app/dbt/taxi_rides_ny" dbt-bq-dtc deps
+```
