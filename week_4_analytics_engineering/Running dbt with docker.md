@@ -75,7 +75,9 @@ This is a quick guide on how to setup dbt with BigQuery on Docker. Gotten from [
 
 
 - To run the commands
-```docker compose run --workdir="//usr/app/dbt/taxi_rides_ny" dbt-bq-dtc run --select stg_green_tripdata```
+  - ```bash
+    docker compose run --workdir="//usr/app/dbt/taxi_rides_ny" dbt-bq-dtc run --select stg_green_tripdata
+  ```
 where `stg_green_tripdata` is the file in the staging folder under the models
 
 - To change the output dataset of dbt models
