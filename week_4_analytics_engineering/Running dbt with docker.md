@@ -88,3 +88,12 @@ where `stg_green_tripdata` is the file in the staging folder under the models
 - ```bash
   docker compose run --workdir="//usr/app/dbt/taxi_rides_ny" dbt-bq-dtc deps
   ```
+
+- To create tables on the datawarehouse with local csv files, use seeds
+- ```bash
+  docker compose run --workdir="//usr/app/dbt/taxi_rides_ny" dbt-bq-dtc seed
+  ```
+- To refresh
+- ```bash
+  docker compose run --workdir="//usr/app/dbt/taxi_rides_ny" dbt-bq-dtc seed --full-refresh
+  ```
