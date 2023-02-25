@@ -1,1 +1,0 @@
- docker compose run --workdir="//Users/x/OneDrive/Documents/Python/Jan_2023/DE_Zoomcamp/week_4_analytics_engineering/dbt/taxi_rides_ny" dbt-bq-dtc debug
