@@ -2,7 +2,7 @@
 
 with fhv_data as (
     select *
-    from {{ ref('stg_fhv_tripdata.sql')}}
+    from {{ ref('stg_fhv_tripdata')}}
 ),
 
 dim_zones as (
@@ -27,4 +27,4 @@ from fhv_data
 inner join dim_zones as pickup_zone
 on fhv_data.pickup_locationid = pickup_zone.locationid
 inner join dim_zones as dropoff_zone
-on fhv_data.pickup_locationid = dropoff_zone.locationid
+on fhv_data.dropoff_locationid = dropoff_zone.locationid
