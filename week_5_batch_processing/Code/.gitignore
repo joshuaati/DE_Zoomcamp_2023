@@ -2,3 +2,4 @@
 *.gz
 *.parquet
 fhvhv/
+data/
