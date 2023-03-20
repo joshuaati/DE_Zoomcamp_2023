@@ -1,12 +1,4 @@
 ##
-#  Generic dockerfile for dbt image building.  
-#  See README for operational details
-##
-
-# Top level build args
-ARG build_for=linux/amd64
-
-##
 # base image (abstract)
 ##
 FROM --platform=$build_for python:3.9.9-slim-bullseye as base

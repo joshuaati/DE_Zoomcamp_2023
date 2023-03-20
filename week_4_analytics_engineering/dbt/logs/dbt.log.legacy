@@ -1,0 +1,13 @@
+2023-03-20 15:53:34.245434 (MainThread): Creating a LegacyVersion has been deprecated and will be removed in the next major release
+2023-03-20 15:53:34.245434 (MainThread): Creating a LegacyVersion has been deprecated and will be removed in the next major release
+2023-03-20 15:53:34.245434 (MainThread): Creating a LegacyVersion has been deprecated and will be removed in the next major release
+2023-03-20 15:53:34.245434 (MainThread): Creating a LegacyVersion has been deprecated and will be removed in the next major release
+2023-03-20 15:53:34.305283 (MainThread): Creating a LegacyVersion has been deprecated and will be removed in the next major release
+2023-03-20 15:53:34.305283 (MainThread): Creating a LegacyVersion has been deprecated and will be removed in the next major release
+2023-03-20 15:53:34.306285 (MainThread): Creating a LegacyVersion has been deprecated and will be removed in the next major release
+2023-03-20 15:53:34.306285 (MainThread): Creating a LegacyVersion has been deprecated and will be removed in the next major release
+2023-03-20 15:53:34.313805 (MainThread): Creating a LegacyVersion has been deprecated and will be removed in the next major release
+2023-03-20 15:53:34.314805 (MainThread): Creating a LegacyVersion has been deprecated and will be removed in the next major release
+2023-03-20 15:53:34.314805 (MainThread): Creating a LegacyVersion has been deprecated and will be removed in the next major release
+2023-03-20 15:53:34.314805 (MainThread): Creating a LegacyVersion has been deprecated and will be removed in the next major release
+2023-03-20 15:53:35.069536 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``

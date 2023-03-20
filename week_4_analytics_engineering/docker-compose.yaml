@@ -10,3 +10,6 @@ services:
       - ~/.dbt/:/root/.dbt/
       - ~/.google/credentials/google_credentials.json:/.google/credentials/google_credentials.json
     network_mode: host
+
+  piperider:
+    image: infuseai/piperider:v0.1.3.14
