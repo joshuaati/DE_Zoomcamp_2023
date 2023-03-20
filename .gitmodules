@@ -1,0 +1,3 @@
+[submodule "taxi_rides_ny_duckdb"]
+	path = taxi_rides_ny_duckdb
+	url = https://github.com/joshuaati/taxi_rides_ny_duckdb.git
