@@ -7,7 +7,7 @@ profiler:
 #   table:
 #     # the maximum row count to profile. (Default unlimited)
 #     limit: 1000000
-#     duplicateRows: false
+     duplicateRows: true
 
 telemetry:
-  id: d1c4c4183fd7471cb68cf63dcb9c8b1a
+  id: 8aecd337f8fb4a428b8d3faf0f377438

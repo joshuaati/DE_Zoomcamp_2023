@@ -46,3 +46,7 @@ seeds:
         taxi_zone_lookup:
             +column_types:
                 locationid: numeric
+
+metrics: 
+  taxi_rides_ny: 
+    +enabled: true

@@ -395,3 +395,14 @@ There are 3 unused configuration paths:
 15:50:38.342662 [info ] [MainThread]: 
 15:50:38.343661 [warn ] [MainThread]: [[33mWARNING[0m]: Nothing to do. Try checking your model configs and model specification args
 15:50:38.351178 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222A9865CA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222A979DD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222A979D8B0>]}
+
+
+============================== 2023-03-20 19:08:28.354244 | 500f8edc-b70c-4e87-ac97-17290db8f179 ==============================
+[0m19:08:28.354244 [info ] [MainThread]: Running with dbt=1.4.5
+[0m19:08:28.356243 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\x\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m19:08:28.357242 [debug] [MainThread]: Tracking: tracking
+[0m19:08:28.376241 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD2C356C70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD2F8E5250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD2F8E5CA0>]}
+[0m19:11:18.800306 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD2F8E5C70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD2F8DC190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD2F8DC4C0>]}
+[0m19:11:18.802296 [debug] [MainThread]: Flushing usage events
+[0m19:11:20.137886 [error] [MainThread]: Encountered an error:
+
